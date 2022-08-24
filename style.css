@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* PRODUCT */
+.product {
+  width: 900px;
+  display: grid;
+  column-gap: 40px;
+  position: relative;
+  margin: 100px auto;
+  border-radius: 5px;
+  border: solid 4px #151313;
+  grid-template-columns: 250px 1fr 1fr;
+}
+
+.product-title {
+  padding: 15px;
+  font-size: 26px;
+  text-align: center;
+  grid-column: 1 / -1;
+  text-transform: uppercase;
+  background-color: #ececec;
+}
+
+.product-title::before {
+  top: -15px;
+  left: -30px;
+  content: "sale";
+  font-size: 12px;
+  color: #ececec;
+  padding: 5px 10px;
+  position: absolute;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #f8492a;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+}
+
+/* PRODUCT INFORMATION */
+.container-product-info {
+  width: 260px;
+}
+
+.price-ship {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-price {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.shipping {
+  font-size: 12px;
+  margin-top: 25px;
+  color: #979494;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: #151313;
+  font-size: 16px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT VARIANT */
+.product-variant {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.variant {
+  width: 20px;
+  height: 20px;
+}
+.variant-1 {
+  background-color: #000000;
+}
+.variant-2 {
+  background-color: #acc943;
+}
+.variant-3 {
+  background-color: #af3434;
+}
+.variant-4 {
+  background-color: #70e42e;
+}
+.variant-5 {
+  background-color: #7247e9;
+}
+.variant-6 {
+  background-color: #9518b4;
+}
+
+.container-product-details {
+  width: 260px;
+  margin-top: 20px;
+}
+
+.details-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.details-list {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 30px;
+  list-style-type: square;
+}
+
+li {
+  line-height: 2;
+}
+
+.add-cart {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #ececec;
+  margin-top: -7px;
+  grid-column: 1 / -1;
+  text-transform: uppercase;
+  background-color: #151313;
+}
+
+.add-cart:hover {
+  color: #151313;
+  background-color: #ececec;
+}
